@@ -10,10 +10,10 @@ RUN mkdir -p ${FLYWHEEL}
 COPY manifest.json ${FLYWHEEL}
 
 # Copy run script
-COPY run.sh ${FLYWHEEL}/run.sh
-RUN chmod +x ${FLYWHEEL}/run.sh
+COPY run ${FLYWHEEL}/run
+RUN chmod +x ${FLYWHEEL}/run
 # Copy over output file
 COPY ismrmrd_raw.hdf5.tgz ${FLYWHEEL}/ismrmrd_raw.hdf5.tgz
 
 # Configure entrypoint
-ENTRYPOINT ["/flywheel/v0/run.sh"]
+ENTRYPOINT ["/flywheel/v0/run"]
