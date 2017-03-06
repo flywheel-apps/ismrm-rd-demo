@@ -8,11 +8,6 @@
     "inputs": {
         "input": {
             "base": "file", 
-            "type": {
-                "enum": [
-                    "raw"
-                ]
-            }
         }
     }, 
     "label": "ISMRM-RD (DEMO)", 
