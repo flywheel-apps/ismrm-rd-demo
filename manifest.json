@@ -8,6 +8,12 @@
     "inputs": {
         "input": {
             "base": "file", 
+            "description": "Siemens MR Raw", 
+            "type": {
+                "enum": [
+                    "Siemens MR Raw"
+                ]
+            }
         }
     }, 
     "label": "ISMRM-RD (DEMO)", 
