@@ -12,6 +12,7 @@ COPY manifest.json ${FLYWHEEL}
 # Copy run script
 COPY run ${FLYWHEEL}/run
 RUN chmod +x ${FLYWHEEL}/run
+
 # Copy over output file
 COPY ismrmrd_raw.hdf5.tgz ${FLYWHEEL}/ismrmrd_raw.hdf5.tgz
 
